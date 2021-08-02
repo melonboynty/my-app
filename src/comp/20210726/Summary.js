@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Article, { Test } from "./Article";
+import Article, { Hint } from "./Article";
 
 class Summary extends Component {
   constructor(props) {
@@ -27,10 +27,12 @@ class Summary extends Component {
   }
 
   render() {
-    return (<div>
-      <Test name= "xxxx"></Test>
-      {this.state.posts.map((article,index) => <Article key={index} post={article} onVote={this.handleVote} />)}
-    </div>);
+    return (
+      <div>
+        <Hint name= "提示语" />
+        {this.state.posts.map((article,index) => <Article key={index} post={article} onVote={this.handleVote} />)}
+      </div>
+    );
   }
 }
 

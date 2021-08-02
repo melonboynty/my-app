@@ -19,12 +19,12 @@ class Article extends Component {
   }
 }
 
-function Test(props) {
+function Hint(props) {
   return (
-    <div>test{props.name}</div>
+    <div>{props.name}：test</div>
   );
 }
 
 
 export default Article;
-export {Test};
+export {Hint};
